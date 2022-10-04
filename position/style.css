@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    background-color: grey;
+    position: relative;
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    margin: 4px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.special:hover {
+    background-color: blueviolet;
+}
