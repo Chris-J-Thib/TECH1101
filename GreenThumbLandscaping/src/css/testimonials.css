@@ -1,0 +1,24 @@
+main li {
+    position: relative;
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid darkolivegreen;
+    border-radius: 8px;
+}
+
+p {
+    margin: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 15px;
+}

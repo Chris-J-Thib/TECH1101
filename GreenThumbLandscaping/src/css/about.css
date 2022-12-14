@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#pics {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#pics img {
+    border: 3px solid darkolivegreen;
+    border-radius: 16px;
+    margin: 2.4vw;
+    max-width: 25vw;
+}
+
+p {
+    padding: 15px;
+    font-size: max(1.5vw, 10.5px);
+    text-align: left;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #pics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pics img {
+        max-width: 60vw;
+    }
+}

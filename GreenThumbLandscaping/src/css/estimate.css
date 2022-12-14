@@ -1,0 +1,107 @@
+h1 {
+    padding: 1.04vw;
+    font-size: max(3vw, 21px);
+    text-align: center;
+}
+
+h2 {
+    padding: 1.04vw;
+    font-size: max(2vw, 15px);
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+    font-size: max(1.5vw, 12px);
+    text-align: left;
+}
+
+main li {
+    display: flex;
+    justify-content: space-between;
+    margin: max(1.5vw, 25px);
+    border-bottom: 1px dashed rgba(0, 0, 0, .3);
+
+}
+
+#last {
+    padding-bottom: max(1.5vw, 25px);
+    border-image: linear-gradient(0.25turn, rgba(240, 255, 255, 0), darkolivegreen, rgba(240, 255, 255, 0));
+    border-width: 3px;
+    border-style: solid;
+    border-image-slice: 0 0 15 0;
+}
+
+#calcLine {
+    border: none;
+}
+
+label {
+    font-weight: bolder;
+    font-size: max(1.7vw, 15px);
+}
+
+#outerDiv,
+#inptDiv,
+#jobDiv,
+#timeDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+input[type="text"] {
+    text-align: right;
+    width: 11vw;
+}
+
+input {
+    margin: 4px;
+}
+
+#smLabel {
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 4px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+    #jobDiv,
+    #inptDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #outerDiv,
+    #sizeDiv,
+    #timeDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    main li {
+        flex-direction: column;
+    }
+
+    #outerDiv,
+    #timeDiv,
+    #jobDiv,
+    #inptDiv {
+        padding: 16px;
+        justify-content: center;
+    }
+
+    input[type="text"] {
+        width: 90px;
+    }
+}

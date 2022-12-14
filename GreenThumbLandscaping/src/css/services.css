@@ -1,0 +1,73 @@
+.serv {
+    columns: 3;
+    column-fill: balance-all;
+}
+
+.serv li {
+    margin: max(1.5vw, 25px);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: max(1vw, 20px);
+    padding-left: 0;
+}
+
+label {
+    font-weight: bolder;
+    font-size: max(1.7vw, 12px);
+}
+
+p {
+    padding: 15px;
+    font-size: max(1vw, 12px);
+    text-align: left;
+}
+
+#serv {
+    margin-top: 30px;
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#serv img {
+    padding-top: 20px;
+    width: 35vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+}
+
+#serv i {
+    font-size: 6vw;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: darkolivegreen;
+    color: azure;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .serv {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .serv {
+        columns: 1;
+    }
+}

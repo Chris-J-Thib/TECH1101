@@ -1,0 +1,30 @@
+h1 {
+    padding: 1.04vw;
+    font-size: max(3vw, 21px);
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+    font-size: max(1.5vw, 10.5px);
+    text-align: left;
+}
+
+main ul {
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main li {
+    list-style: none;
+    font-size: max(1vw, 12px);
+}
+
+#moto {
+    text-align: center;
+    margin: 50px;
+}

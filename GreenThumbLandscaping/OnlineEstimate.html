@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f76aadd2a6.js" crossorigin="anonymous"></script>
+    <script src="src/scrpt/estimate.js" defer></script>
     <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/estimate.css">
 </head>
 
 <body>
@@ -26,74 +29,76 @@
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Testimonials.html">Testimonials</a></li>
             </ul>
+            <i class="fa-solid fa-bars"></i>
         </nav>
         <button><a href="Contact.html">Contact Us</a></button>
     </header>
     <main>
-        <h1>
-            ONLINE ESTIMATE
-        </h1>
+        <section id="text">
+            <h1>
+                ONLINE ESTIMATE
+            </h1>
 
-        <p>
-            Have a landscaping idea but not sure where to start? You can get a decent idea of cost from our calculator,
-            just plug in your needs and generate a base price / estimate.
-        </p>
+            <p>
+                Have a landscaping idea but not sure where to start? You can get a decent idea of cost from our
+                calculator,
+                just plug in your needs and generate a base price / estimate.
+            </p>
 
-        <h2>
-            RESIDENTIAL SERVICES PRICES
-        </h2>
+            <h2>
+                RESIDENTIAL SERVICES PRICES
+            </h2>
 
-        <p>
-            Based off an average yard size of 10000 Square Feet, choose what you need done weekly, monthly or just one
-            time!
-        </p>
+            <p>
+                Based off an average yard size of 10000 Square Feet, choose what you need done weekly, monthly or just
+                one
+                time!
+            </p>
 
-        <ul>
-            <li>Landscape Maintenance (pruning / weed removal) 10 $ / Hr
-            </li>
-            <li>Treatment & fertilization .003 $ / Square Foot (typically 3x / year)
-            </li>
-            <li>Lawn Thatching / clean up .004 $ / Square Foot (typically done weekly)
-            </li>
-            <li>Grass cutting .004 $ / Square Foot (typically 1x / year)
-            </li>
-            <li>Mulching additional .001 / Square Foot
-            </li>
-            <li>Seeding .007 $ / Square Foot
-            </li>
-            <li>Aeration .003 $ / Square Foot (typically 1x / year)
-            </li>
-            <li>Tree-health inspections 5 $ / Tree
-            </li>
-            <li>Tree trimming 40 $ / Tree
-            </li>
-            <li>Shrub pruning 10 $ / Hr
-            </li>
-            <li>Weed management 10 $ / Hr
-            </li>
-            <li>Tree removal 40 $ / Hr
-            </li>
-            <li>Landscape Construction 40 $ / Hr + Materials
-            </li>
-            <li>Decking & fencing 40 $ / Hr + Materials
-            </li>
-            <li>Retaining walls 40 $ / Hr + Materials
-            </li>
-            <li>Brick paving & pavers 40 $ / Hr + Materials
-            </li>
-            <li>Patios & pergolas 40 $ / Hr + Materials
-            </li>
-            <li>Water features & ponds 50 $ / Hr + Materials
-            </li>
-            <li>Planting trees & shrubs 40 $ / Hr + Materials
-            </li>
-            <li>Artificial grass / Astroturf 40 $ / Hr + Materials
-            </li>
-            <li>Outdoor lighting / heating & firepits 40 $ / Hr + Materials
-            </li>
-            <li>Lawn / sod installation 20 $ / Hr + Materials</li>
-        </ul>
+            <ul>
+                <label>Time Based Services</label>
+                <ul class="serv">
+                    <li>Landscape Maintenance (pruning / weed removal) 10 $ / Hr</li>
+                    <li>Shrub pruning 10 $ / Hr</li>
+                    <li>Weed management 10 $ / Hr</li>
 
+                </ul>
+                <label>Size Based Services</label>
+                <ul class="serv">
+                    <li>Tree-health inspections 5 $ / Tree</li>
+                    <li>Tree trimming 40 $ / Tree</li>
+                    <li>Seeding .007 $ / Square Foot</li>
+                    <li>Mulching additional .001 / Square Foot</li>
+                    <li>Tree removal 40 $ / Hr</li>
+                </ul>
+                <label>Size & Time Based Services</label>
+                <ul class="serv">
+                    <li>Treatment & fertilization .003 $ / Square Foot (typically 3x / year)</li>
+                    <li>Lawn Thatching / clean up .004 $ / Square Foot (typically done weekly)</li>
+                    <li>Grass cutting .004 $ / Square Foot (typically 1x / year)</li>
+                    <li>Aeration .003 $ / Square Foot (typically 1x / year)</li>
+                </ul>
+                <label>Time & Material Based Services</label>
+                <ul class="serv">
+                    <li>Landscape Construction 40 $ / Hr + Materials</li>
+                    <li>Decking & fencing 40 $ / Hr + Materials</li>
+                    <li>Retaining walls 40 $ / Hr + Materials</li>
+                    <li>Brick paving & pavers 40 $ / Hr + Materials</li>
+                    <li>Patios & pergolas 40 $ / Hr + Materials</li>
+                    <li>Water features & ponds 50 $ / Hr + Materials</li>
+                    <li>Planting trees & shrubs 40 $ / Hr + Materials</li>
+                    <li>Artificial grass / Astroturf 40 $ / Hr + Materials</li>
+                    <li>Outdoor lighting / heating & firepits 40 $ / Hr + Materials</li>
+                    <li id="last">Lawn / sod installation 20 $ / Hr + Materials</li>
+                </ul>
+                <li id="calcLine"><label>Total</label>
+                    <button>Calculate</button>
+                </li>
+
+
+            </ul>
+        </section>
+        <img id="bg" src="src/imgs/background-default.jpg" alt="background-default">
     </main>
     <footer>
 
