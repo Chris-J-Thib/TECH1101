@@ -39,7 +39,7 @@ function click() {
         li.style.height = "fit-content";
     } else {
         p.style.scale = 0;
-        li.style.height = "20px";
+        li.style.height = "";
     }
 
 }

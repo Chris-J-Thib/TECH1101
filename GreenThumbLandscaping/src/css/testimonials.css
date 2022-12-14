@@ -1,5 +1,4 @@
 main li {
-    display: flex;
     position: relative;
     list-style: none;
     margin: 20px;
@@ -11,6 +10,7 @@ main li {
 
 p {
     margin: 10px;
+    margin-top: 30px;
     scale: 0;
 }
 
@@ -34,9 +34,6 @@ p {
 
 .name {
     font-weight: bold;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 .rating {
@@ -49,4 +46,15 @@ p {
     right: 0;
     padding-top: 0px;
     padding-right: 0px;
+}
+
+
+@media screen and (max-width:300px) {
+    main li {
+        height: 50px;
+    }
+
+    .rating {
+        top: 25px;
+    }
 }
