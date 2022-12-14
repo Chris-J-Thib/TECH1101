@@ -1,4 +1,5 @@
 main li {
+    display: flex;
     position: relative;
     list-style: none;
     margin: 20px;
@@ -33,6 +34,9 @@ p {
 
 .name {
     font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .rating {
