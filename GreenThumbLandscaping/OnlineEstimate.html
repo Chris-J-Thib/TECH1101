@@ -31,7 +31,7 @@
             </ul>
             <i class="fa-solid fa-bars"></i>
         </nav>
-        <button><a href="Contact.html">Contact Us</a></button>
+        <button id="contact"><a href="Contact.html">Contact Us</a></button>
     </header>
     <main>
         <section id="text">
@@ -58,41 +58,43 @@
             <ul>
                 <label>Time Based Services</label>
                 <ul class="serv">
-                    <li>Landscape Maintenance (pruning / weed removal) 10 $ / Hr</li>
-                    <li>Shrub pruning 10 $ / Hr</li>
-                    <li>Weed management 10 $ / Hr</li>
+                    <li value="10">Landscape Maintenance (pruning / weed removal) 10 $ / Hr</li>
+                    <li value="10">Shrub pruning 10 $ / Hr</li>
+                    <li value="10">Weed management 10 $ / Hr</li>
 
                 </ul>
                 <label>Size Based Services</label>
                 <ul class="serv">
-                    <li>Tree-health inspections 5 $ / Tree</li>
-                    <li>Tree trimming 40 $ / Tree</li>
-                    <li>Seeding .007 $ / Square Foot</li>
-                    <li>Mulching additional .001 / Square Foot</li>
-                    <li>Tree removal 40 $ / Hr</li>
+                    <li value="5">Tree-health inspections 5 $ / Tree</li>
+                    <li value="40">Tree trimming 40 $ / Tree</li>
+                    <li value="700">Seeding .007 $ / Square Foot</li>
+                    <li value="100">Mulching additional .001 / Square Foot</li>
+                    <li value="40">Tree removal 40 $ / Hr</li>
                 </ul>
                 <label>Size & Time Based Services</label>
                 <ul class="serv">
-                    <li>Treatment & fertilization .003 $ / Square Foot (typically 3x / year)</li>
-                    <li>Lawn Thatching / clean up .004 $ / Square Foot (typically done weekly)</li>
-                    <li>Grass cutting .004 $ / Square Foot (typically 1x / year)</li>
-                    <li>Aeration .003 $ / Square Foot (typically 1x / year)</li>
+                    <li value="300">Treatment & fertilization .003 $ / Square Foot (typically 3x / year)</li>
+                    <li value="400">Lawn Thatching / clean up .004 $ / Square Foot (typically done weekly)</li>
+                    <li value="400">Grass cutting .004 $ / Square Foot (typically 1x / year)</li>
+                    <li value="300">Aeration .003 $ / Square Foot (typically 1x / year)</li>
                 </ul>
                 <label>Time & Material Based Services</label>
                 <ul class="serv">
-                    <li>Landscape Construction 40 $ / Hr + Materials</li>
-                    <li>Decking & fencing 40 $ / Hr + Materials</li>
-                    <li>Retaining walls 40 $ / Hr + Materials</li>
-                    <li>Brick paving & pavers 40 $ / Hr + Materials</li>
-                    <li>Patios & pergolas 40 $ / Hr + Materials</li>
-                    <li>Water features & ponds 50 $ / Hr + Materials</li>
-                    <li>Planting trees & shrubs 40 $ / Hr + Materials</li>
-                    <li>Artificial grass / Astroturf 40 $ / Hr + Materials</li>
-                    <li>Outdoor lighting / heating & firepits 40 $ / Hr + Materials</li>
-                    <li id="last">Lawn / sod installation 20 $ / Hr + Materials</li>
+                    <li value="40">Landscape Construction 40 $ / Hr + Materials</li>
+                    <li value="40">Decking & fencing 40 $ / Hr + Materials</li>
+                    <li value="40">Retaining walls 40 $ / Hr + Materials</li>
+                    <li value="40">Brick paving & pavers 40 $ / Hr + Materials</li>
+                    <li value="40">Patios & pergolas 40 $ / Hr + Materials</li>
+                    <li value="50">Water features & ponds 50 $ / Hr + Materials</li>
+                    <li value="40">Planting trees & shrubs 40 $ / Hr + Materials</li>
+                    <li value="40">Artificial grass / Astroturf 40 $ / Hr + Materials</li>
+                    <li value="40">Outdoor lighting / heating & firepits 40 $ / Hr + Materials</li>
+                    <li value="20" id="last">Lawn / sod installation 20 $ / Hr + Materials</li>
                 </ul>
-                <li id="calcLine"><label>Total</label>
-                    <button>Calculate</button>
+                <li id="calcLine">
+                    <label>Total</label>
+                    <button id="calc" onclick="calc()">Calculate</button>
+                    <label id="total">CA$0.00</label>
                 </li>
 
 
