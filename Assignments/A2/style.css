@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background-color: #F9FAFB;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: max(226px, 100vw);
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+header img {
+    position: absolute;
+    top: 23.5px;
+    right: max(190px, 84.0277778vw);
+    left: max(7.77778vw, 20px);
+}
+
+#drop {
+    display: flex;
+    flex-direction: row;
+    gap: calc(2.22222222vw + .75px);
+
+    position: absolute;
+    top: 28px;
+    right: calc(44.444444vw - 111px);
+
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+#dash {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    position: absolute;
+    top: 18px;
+    right: 7.7778vw;
+    width: 165px;
+    height: 44px;
+    padding: 10px 18px;
+
+
+
+    background: #7F56D9;
+    border-radius: 8px;
+    border: 1px solid #7F56D9;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+i {
+    visibility: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: max(80px, 12.22222222vw);
+    left: max(31px, calc(14.4444444444vw - 1.25px));
+    width: max(160px, 71.1111111vw);
+
+    font-weight: 600;
+    font-size: max(25px, 4.16666666667vw);
+    line-height: max(25px, 5vw);
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #101828;
+}
+
+h2 {
+    position: absolute;
+    top: max(180px, 18.88888889vw);
+    left: max(62px, 27.5vw);
+    width: max(101px, 45vw);
+
+    font-weight: 400;
+    font-size: max(20px, 1.388888888889vw);
+    line-height: max(30px, 2.08333333333vw);
+    text-align: center;
+    color: #667085;
+}
+
+main img {
+    position: absolute;
+    top: max(300px, 27.5vw);
+    left: 23.333333333vw;
+    right: 23.333333333vw;
+    width: 53.33333333vw;
+}
+
+footer p {
+    position: absolute;
+    top: max(600px, 71.94444vw);
+    left: max(17.5px, 7.7777777777777778vw);
+    width: max(190px, 84.4444444444444444vw);
+
+    font-weight: 500;
+    font-size: max(16px, 1.1111111111vw);
+    line-height: max(24px, 1.666666666667vw);
+    text-align: center;
+    color: #667085;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: max(14px, 6.38888888889vw);
+    row-gap: 10vh;
+
+    position: absolute;
+    top: max(700px, 75.8333333333vw);
+    left: max(17.5px, 7.7777777777777778vw);
+    margin-right: 50px;
+
+    list-style-type: none;
+}
+
+#chat {
+    position: fixed;
+    right: max(2.777777778vw, 10px);
+    bottom: max(3.23624595vh, 10px);
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    background: #7F56D9;
+    border: 1px solid #7F56D9;
+    border-radius: 28px;
+}
+
+#chat:active {
+    background-color: #280d63;
+    border: #280d63;
+}
+
+#dash:active {
+    background-color: #280d63;
+    border: #280d63;
+}
+
+#chat:hover {
+    background-color: #280d63;
+    border: #280d63;
+}
+
+#dash:hover {
+    background-color: #280d63;
+    border: #280d63;
+}
+
+@media screen and (min-width: 1441px) {
+    footer ul {
+        justify-content: space-between;
+        gap: unset;
+        right: 7.7777777777777778vw;
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    main img {
+        position: absolute;
+        top: calc(-37.5vw + 600px);
+    }
+
+    i {
+        visibility: visible;
+        height: fit-content;
+        scale: 2;
+        z-index: 3;
+    }
+
+    nav {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        overflow-y: overlay;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #F9FAFB;
+        background-color: #7F56D9;
+        border: 1px solid #7F56D9;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+    }
+
+    #dash {
+        display: none;
+
+        position: fixed;
+        top: 236px;
+        right: 20px;
+        width: 139px;
+
+        border: 1px solid #280d63;
+        border-top: none;
+        border-radius: 0px 0px 8px 8px;
+        z-index: 1;
+    }
+
+    #drop {
+        display: none;
+
+        position: fixed;
+        right: 20px;
+        top: 64px;
+
+        background-color: #7F56D9;
+        color: #F9FAFB;
+        border: 1px solid #280d63;
+        border-radius: 8px 8px 0px 0px;
+        border-bottom: none;
+        z-index: 2;
+
+        /* this only takes effect when active/hover */
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #drop li {
+        text-align: center;
+        border-radius: 8px;
+        background-color: #7F56D9;
+        border: 10px solid #7F56D9;
+    }
+
+
+    /* For mobile phones */
+
+    nav:active {
+        background-color: #280d63;
+        border: 1px solid #280d63;
+    }
+
+    nav:active #drop {
+        display: flex;
+    }
+
+    nav:active #dash {
+        display: flex;
+
+    }
+
+    #drop li:active {
+        background-color: #280d63;
+        border: 10px solid #280d63;
+    }
+
+    #dash:active {
+        border-radius: 8px;
+        background-color: #280d63;
+        border: 10px solid #280d63;
+        z-index: 3;
+    }
+
+
+    /* for resized desktop */
+
+    nav:hover {
+        background-color: #280d63;
+        border: 1px solid #280d63;
+    }
+
+    nav:hover #drop {
+        display: flex;
+    }
+
+    nav:hover #dash {
+        display: flex;
+
+    }
+
+    #drop li:hover {
+        background-color: #280d63;
+        border: 10px solid #280d63;
+    }
+
+    #dash:hover {
+        border-radius: 8px;
+        background-color: #280d63;
+        border: 10px solid #280d63;
+        z-index: 3;
+    }
+
+
+
+}
+
+@media screen and (max-width: 226px) {
+    main img {
+        display: none;
+    }
+
+    footer ul {
+        row-gap: 1vh;
+    }
+}
+
+@media screen and ((max-width: 213px) or (max-height: 350px)) {
+
+
+    #chat {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 213px) {
+    header img {
+        position: absolute;
+        right: unset;
+        left: max(calc(50vw - 59px), 52px);
+    }
+
+    nav {
+        display: none;
+    }
+}
